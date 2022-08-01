@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+	<title>Compre um site</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<header>
+		<div>
+			<h1>Thiago Cardoso</h1>
+			<h2>Desenvolvimento Web</h2>
+		</div>
+
+		<nav id="naveg" style="visibility: hidden;">
+			<button onclick="loading(this.id)" class="link_nav" id="1">Home</button>
+			<button onclick="loading(this.id)" class="link_nav" id="2">Sobre mim</button>
+			<button onclick="loading(this.id)" class="link_nav" id="3">Projetos</button>
+			<button onclick="loading(this.id)" class="link_nav" id="4">Depoimentos</button>
+			<p class="link_nav" id="5">Compre um site</p>
+			<button onclick="loading(this.id)" class="link_nav" id="6">Contato</button>
+			
+		</nav>
+		<button onclick="menu();" class="botaomenu"><img src="imagens/menu.png" alt="Menu"></button>
+		
+	</header>
+
+	<section>
+		<div id="loading"><p id="pontos"></p></div>
+		<div id="desfocar">
+			<div id="janela">
+				<div id="fechar"><button onclick="fechar()"><img src="imagens/fechar.png" alt="Fechar"></button></div>
+				<p>Pedido de orçamento realizado! Você receberá o valor aproximado e os próximos passos no seu e-mail em breve!</p>
+			</div>
+		</div>
+		<h3>Compre um site</h3>
+		<p>Preencha os campos abaixo para fazer o orçamento:</p>
+		<p id="expandir">(É importante saber de algumas coisas antes de preencher.<button onclick="expandir()" > Clique aqui para expandir)</button></p>
+		<ul id="lista">
+			<li>Para ter um orçamento mais preciso, forneça o máximo de informações possíveis;</li>
+			<li>O preenchimento do furmulário a seguir NÃO implica na compra de um site automaticamente, se trata apenas de um orçamento, que não está sujeito a cobranças;</li>
+			<li>O passo-a-passo para realmente realizar a compra do site e o valor aproximado serão enviados para seu e-mail, após a análise das informações fornecidas;</li>
+			<li>Você NÃO é obrigado(a) a prosseguir com a compra do site após receber o e-mail. Você é quem decide prosseguir ou não.</li>
+		</ul>
+		<form action="javascript:contatoEnviar()" method="post">
+			<input type="email" id="email" name="email" required placeholder="E-mail">
+			<br><br>
+
+			<input type="text" id="nome" name="nome" required placeholder="Nome">
+			<br><br>
+
+			<input type="text" id="tema" name="tema" required placeholder="Tipo de site">
+			<br><br>
+			
+			<textarea name="msg" id="msg" name="msg" placeholder="Detalhamento do site (Descreva o site ideal para você, com todos os detalhes possíveis)" required></textarea>
+			<br><br>
+
+			<label for="arquivos">Selecione imagens de referência ou o modelo da UI do site (se tiver um pronto):</label>
+			<input type="file" id="arquivos" name="arquivos" multiple>
+			<br><br>
+
+			<input type="submit" value="Enviar" id="enviar" name="enviar">
+		</form>
+
+	</section>
+
+	<footer>
+		<p class="copyright">© Todos os direitos reservados</p>
+	</footer>
+</body>
+</html>

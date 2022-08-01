@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+	<title>Contato</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body id="contato">
+	<header>
+		<div>
+			<h1>Thiago Cardoso</h1>
+			<h2>Desenvolvimento Web</h2>
+		</div>
+
+		<nav id="naveg" style="visibility: hidden;">
+			<button onclick="loading(this.id)" class="link_nav" id="1">Home</button>
+			<button onclick="loading(this.id)" class="link_nav" id="2">Sobre mim</button>
+			<button onclick="loading(this.id)" class="link_nav" id="3">Projetos</button>
+			<button onclick="loading(this.id)" class="link_nav" id="4">Depoimentos</button>
+			<button onclick="loading(this.id)" class="link_nav" id="5">Compre um site</button>
+			<p class="link_nav" id="6">Contato</p>
+		</nav>
+		<button onclick="menu();" class="botaomenu"><img src="imagens/menu.png" alt="Menu"></button>
+		
+	</header>
+
+	<section>
+		<div id="loading"><p id="pontos"></p></div>
+		<div id="desfocar">
+			<div id="janela">
+				<div id="fechar"><button onclick="fechar()"><img src="imagens/fechar.png" alt="Fechar"></button></div>
+				<p>Mensagem enviada! Você receberá uma resposta em seu e-mail em breve!</p>
+			</div>
+		</div>
+		<h3>Contato</h3>
+		<p>Preencha os campos abaixo para me enviar uma mensagem qualquer:</p>
+		<br>
+		<form action="javascript:contatoEnviar()" method="post">
+			<p>A mensagem é referente à compra/orçamento de um site?</p>
+			<input type="radio" id="nao" name="pergunta" value="nao" onclick="escondermsg()" checked>
+            <label for="nao">Não</label>
+			<input type="radio" id="sim" name="pergunta" value="sim" onclick="exibirmsg()">
+            <label for="sim">Sim</label>
+
+			<p id="redirect">Para fazer o orçamento de um site, <button onclick="loading(5)">Clique Aqui</button><br> ou acesse "Compre um site" na barra de navegação</p>
+			<br><br>
+
+			<input type="email" id="email" name="email" required placeholder="E-mail">
+			<br><br>
+
+			<input type="text" id="nome" name="nome" required placeholder="Nome">
+			<br><br>
+			
+			<textarea name="msg" id="msg" placeholder="Digite sua mensagem aqui" required></textarea>
+			<br><br>
+
+			<input type="submit" value="Enviar" id="enviar" name="enviar">
+		</form>
+
+	</section>
+
+	<footer>
+		<p class="copyright">© Todos os direitos reservados</p>
+	</footer>
+</body>
+</html>

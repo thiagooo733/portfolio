@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+	<title>Meu Portfólio</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body id="home" onload="timer(), cursor()">
+	<div id="homebody"></div>
+	<header id="homeheader">
+		<div>
+			<h1>Thiago Cardoso</h1>
+			<h2>Desenvolvimento Web</h2>
+		</div>
+
+		<nav id="naveg" style="visibility: hidden;">
+			<p class="link_nav" id="1">Home</p>
+			<button onclick="loading(this.id)" class="link_nav" id="2">Sobre mim</button>
+			<button onclick="loading(this.id)" class="link_nav" id="3">Projetos</button>
+			<button onclick="loading(this.id)" class="link_nav" id="4">Depoimentos</button>
+			<button onclick="loading(this.id)" class="link_nav" id="5">Compre um site</button>
+			<button onclick="loading(this.id)" class="link_nav" id="6">Contato</button>
+		</nav>
+		<button onclick="menu();" class="botaomenu"><img src="imagens/menu.png" alt="Menu"></button>
+		
+	</header>
+
+	<section>
+		<div id="loading"><p id="pontos"></p></div>
+		<p id="digit">O site perfeito para <strong id="digi">sua empresa</strong><strong id="cursor">|</strong></p>
+		<br><br><br>
+		
+		<div id="botao_descer">
+			<button onclick="descersubir()"><img src="imagens/setabaixo.png" alt="Descer a página"></button>
+		</div>
+
+		<div id="divcompre">
+			<button id="compre" onclick="loading(5)">Compre um site</button>
+		</div>
+		<p id="areapalavras">
+			<strong class="palavras">moderno</strong>
+			<strong class="palavras">criativo</strong>
+			<strong class="palavras">elegante</strong>
+			<strong class="palavras">bonito</strong>
+			<strong class="palavras">completo</strong>
+			<strong class="palavras">otimizado</strong>
+			<strong class="palavras">interativo</strong>
+			<strong class="palavras">barato</strong>
+			<strong class="palavras">agradável</strong>
+			<strong class="palavras">chique</strong>
+			<strong class="palavras">divertido</strong>
+			<strong class="palavras">sério</strong>
+			<strong class="palavras">discreto</strong>
+			<strong class="palavras">chamativo</strong>
+			<strong class="palavras">dinâmico</strong>
+			<strong class="palavras">único</strong>
+			<strong class="palavras">inteligente</strong>
+			<strong class="palavras">eficiente</strong>
+			<strong class="palavras">especial</strong>
+			<strong class="palavras">robusto</strong>
+			<strong class="palavras">minimalista</strong>
+			<strong class="palavras">maximalista</strong>
+			<strong class="palavras">rápido</strong>
+			<strong class="palavras">refinado</strong>
+			<strong class="palavras">seguro</strong>
+			<strong class="palavras">sofisticado</strong>
+			<strong class="palavras">animado</strong>
+			<strong class="palavras">zen</strong>
+			<strong class="palavras">interativo</strong>
+			<strong class="palavras">moderno</strong>
+			<strong class="palavras">criativo</strong>
+			<strong class="palavras">elegante</strong>
+			<strong class="palavras">bonito</strong>
+			<strong class="palavras">completo</strong>
+			<strong class="palavras">otimizado</strong>
+			<strong class="palavras">interativo</strong>
+			<strong class="palavras">barato</strong>
+			<strong class="palavras">agradável</strong>
+			<strong class="palavras">chique</strong>
+			<strong class="palavras">divertido</strong>
+			<strong class="palavras">sério</strong>
+			<strong class="palavras">discreto</strong>
+			<strong class="palavras">chamativo</strong>
+			<strong class="palavras">dinâmico</strong>
+			<strong class="palavras">único</strong>
+			<strong class="palavras">inteligente</strong>
+			<strong class="palavras">eficiente</strong>
+			<strong class="palavras">especial</strong>
+			<strong class="palavras">robusto</strong>
+			<strong class="palavras">minimalista</strong>
+			<strong class="palavras">maximalista</strong>
+			<strong class="palavras">rápido</strong>
+			<strong class="palavras">refinado</strong>
+			<strong class="palavras">seguro</strong>
+			<strong class="palavras">sofisticado</strong>
+			<strong class="palavras">animado</strong>
+			<strong class="palavras">zen</strong>
+			<strong class="palavras">interativo</strong>
+			<strong class="palavras">moderno</strong>
+			<strong class="palavras">criativo</strong>
+			<strong class="palavras">elegante</strong>
+			<strong class="palavras">bonito</strong>
+			<strong class="palavras">completo</strong>
+			<strong class="palavras">otimizado</strong>
+			<strong class="palavras">interativo</strong>
+			<strong class="palavras">barato</strong>
+			<strong class="palavras">agradável</strong>
+			<strong class="palavras">chique</strong>
+			<strong class="palavras">divertido</strong>
+			<strong class="palavras">sério</strong>
+			<strong class="palavras">discreto</strong>
+			<strong class="palavras">chamativo</strong>
+			<strong class="palavras">dinâmico</strong>
+			<strong class="palavras">único</strong>
+			<strong class="palavras">inteligente</strong>
+			<strong class="palavras">eficiente</strong>
+			<strong class="palavras">especial</strong>
+			<strong class="palavras">robusto</strong>
+			<strong class="palavras">minimalista</strong>
+			<strong class="palavras">maximalista</strong>
+			<strong class="palavras">rápido</strong>
+			<strong class="palavras">refinado</strong>
+			<strong class="palavras">seguro</strong>
+			<strong class="palavras">sofisticado</strong>
+			<strong class="palavras">animado</strong>
+			<strong class="palavras">zen</strong>
+			<strong class="palavras">interativo</strong>
+			<strong class="palavras">moderno</strong>
+			<strong class="palavras">criativo</strong>
+			<strong class="palavras">elegante</strong>
+			<strong class="palavras">bonito</strong>
+			<strong class="palavras">completo</strong>
+			<strong class="palavras">otimizado</strong>
+			<strong class="palavras">interativo</strong>
+			<strong class="palavras">barato</strong>
+			<strong class="palavras">agradável</strong>
+			<strong class="palavras">chique</strong>
+			<strong class="palavras">interativo</strong>
+			<strong class="palavras">sofisticado</strong>
+			<strong class="palavras">animado</strong>
+			<strong class="palavras">zen</strong>
+			<strong class="palavras">interativo</strong>
+			<strong class="palavras">moderno</strong>
+			<strong class="palavras">criativo</strong>
+		</p>
+	</section>
+
+	<footer>
+		<p class="copyright">© Todos os direitos reservados</p>
+	</footer>
+</body>
+</html>

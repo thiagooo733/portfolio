@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap');
+
+:root{
+	--cor1: #394967;
+	--cor2: #615d5d;
+	--cor3: #1c222d;
+	--cor4: #0B0D0F;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: var(--cor4);
+	margin: 0;
+	font-family: 'Plus Jakarta Sans';
+}
+
+/*HEADER*/
+
+header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	height: 128px;
+	background-color: var(--cor3);	
+	z-index: 2;
+}
+
+#home {
+	background-image: url("imagens/codigo.png");
+}
+
+#homebody {
+	background-color: rgba(33, 43, 61, 0.8);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	position: fixed;
+	z-index: -1;
+}
+
+#homeheader {
+	text-align: center;
+	padding: 30px 0 0 25px;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+header div {
+	display: inline-block;
+	text-align: center;
+	padding: 0 0 0 25px;
+}
+
+header h1 {
+	font-size: 28px;
+	color: white;
+}
+
+header h2 {
+	font-size: 15px;
+	color: #aaaaaa;
+}
+
+#naveg {
+	padding: 20px 0 20px 0;
+	position: fixed;
+	top: 0px;
+	right: 50px;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.link_nav {
+	color: white;
+	opacity: 1;
+	top: 0;
+	font-weight: normal;
+	background: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-size: 13px;
+	display: inline;
+	font-family: 'Plus Jakarta Sans';
+}
+
+.link_nav:hover {
+	color: #aaaaaa;
+	font-weight: bold;
+}
+
+#naveg p {
+	background-color: var(--cor4);
+	border-radius: 10px;
+	padding: 4px;
+}
+
+#naveg p:hover {
+	color: white;
+	cursor: default;
+	font-weight: normal;
+}
+
+header img {
+	width: 30px;
+	filter: invert(100%);
+}
+
+.botaomenu {
+	position: fixed;
+	right: 5px;
+	top: 20px;
+	background: none;
+	outline: none;
+	border: none;
+	opacity: 70%;
+}
+
+.botaomenu:hover{
+	opacity: 40%;
+	cursor: pointer;
+}
+
+
+/*CONTEÚDO (GERAL)*/
+
+#loading {
+	background-color: var(--cor3);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 4;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.4s;
+}
+
+#loading p {
+	text-align: center;
+	font-size: 150px;
+}
+
+#digit {
+	font-size: 40px;
+	padding: 100px 10% 210px 30%;
+}
+
+#areapalavras {
+	padding: 0 20px 10px 20px;
+	text-align: justify;
+	background-color: var(--cor3);
+	margin: 0;
+}
+
+.palavras, #compre{
+	display: inline;
+	font-size: 28px;
+	color: var(--cor2);	
+}
+
+#divcompre {
+	width: calc(100% - 40px);
+	background-color: var(--cor3);
+	padding: 60px 20px 0 20px;
+}
+
+#compre {
+	padding: 30px 0 30px 0;
+	text-decoration: underline;
+	font-weight: bold;
+	color: white;
+	background: none;
+	outline: none;
+	border: none;
+	padding: 0;
+	font-family: 'Plus Jakarta Sans';
+	cursor: pointer;
+}
+
+#compre:hover {
+	color: #bfbfbf;
+}
+
+.palavras:hover {
+	color: white;
+}
+
+#home section {
+	padding: 30px 0 0 0;
+}
+
+#home section button img {
+	width: 120px;
+	height: 40px;
+	filter: invert(100%);
+}
+
+#home section #botao_descer button {
+	background: none;
+	outline: none;
+	border: none;
+	opacity: 70%;
+}
+
+#home section #botao_descer button:hover{
+	opacity: 40%;
+	cursor: pointer;
+}
+
+#botao_descer {
+	position: fixed;
+	left: 650px;
+	top: 550px;
+	transform: scaleY(1);
+	transition: transform 0.3s, top 0.3s;
+	z-index: 3;
+}
+
+section {
+	padding: 30px 15% 0 15%;
+	margin-top: 120px;
+}
+
+section p, section li{
+	color: white;
+	font-size: 18px;
+	text-align: justify;
+}
+
+#lista {
+	display: none;
+}
+
+#expandir {
+	font-size: 13px;
+}
+
+#expandir button {
+	background: none;
+	outline: none;
+	border: none;
+	color: white;
+	font-family: 'Plus Jakarta Sans';
+	font-size: 13px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+#expandir button:hover {
+	text-decoration: underline;
+}
+
+li {
+	padding-bottom: 15px;
+}
+
+h3{
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+}
+
+form {
+	background-color: #212121;
+	margin-bottom: 40px;
+	border-radius: 10px;
+	padding: 40px;
+	text-align: center;
+	width: 70%;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+form p {
+	text-align: center;
+}
+
+input {
+	border: solid #4a4a4a 2px;
+	background-color: white;
+	color: white;
+	background-color: var(--cor4);
+	font-family: 'Plus Jakarta Sans';
+	border: none;
+	border: solid #414141 1px;
+	border-radius: 5px;
+	height: 30px;
+	width: 70%;	
+	margin-bottom: 25px;
+	padding: 5px 10px 5px 10px;
+	font-size: 18px;
+}
+
+input[type=radio]{
+	height: 15px;
+	width: 40px;
+}
+
+input[type=file]{
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+	padding-top: 15px;
+}
+
+#enviar {
+	background-color: var(--cor3);
+	padding: 10px;
+	width: 100px;
+	height: 50px;
+	cursor: pointer;
+}
+
+#enviar:hover{
+	background-color: var(--cor4);
+}
+
+label {
+	color: white;
+}
+
+textarea {
+	height: 200px;
+	color: white;
+	background-color: var(--cor4);
+	font-family: 'Plus Jakarta Sans';
+	border: none;
+	border: solid #414141 1px;
+	border-radius: 5px;
+	resize: none;
+	width: 70%;
+	padding: 10px;
+	font-size: 18px;
+}
+
+#redirect {
+	display: none;
+}
+
+#redirect button {
+	background: none;
+	outline: none;
+	border: none;
+	color: white;
+	text-decoration: underline;
+	cursor: pointer;
+	font-family: 'Plus Jakarta Sans';
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#redirect button:hover {
+	color: #bfbfbf;
+}
+
+#desfocar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(11, 13, 15, 0.7);
+	display: none;
+}
+
+#janela {
+	width: 250px;
+	background-color: var(--cor3);
+	margin: auto;
+	margin-top: 15%;
+	border: solid 1px #414141;
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#janela p{
+	font-size: 20px;
+	text-align: center;
+}
+
+#fechar {
+	text-align: right;
+}
+
+#fechar button {
+	background: none;
+	outline: none;
+	border: none;
+}
+
+#fechar button:hover {
+	opacity: 60%;
+	cursor: pointer;
+}
+
+#fechar button img {
+	width: 40px;
+	filter: invert(100%);
+}
+
+#depo section {
+	padding: 30px 0 0 0;
+}
+
+#depo h3 {
+	padding: 0 15% 0 15%;
+}
+
+.depoimento {
+	color: white;
+	width: 400px;
+	padding: 40px;
+	border-radius: 10px;
+	transition: width 0.4s;
+}
+
+#depoimentos {
+	margin-bottom: 30px;
+}
+
+#depo1 {
+	width: 600px;
+}
+
+#depo2, #depo4 {
+	margin-left: auto;
+	margin-right: 0;
+	background-color: #212121;
+}
+
+#depo1, #depo3, #depo5 {
+	margin-right: auto;
+	margin-left: 0;
+	background-color: var(--cor1);
+}
+
+h6 {
+	padding: 0;
+	font-size: 15px;
+	text-align: right;
+}
+
+.aspa_inicio, .aspa_fim {
+	width: 50px;
+}
+
+.aspa_fim {
+	transform: rotate(180deg);
+}
+
+.depoimento div {
+	text-align: right;
+}
+
+#projetos section {
+	padding: 30px 0 0 0;
+	
+}
+
+#projetos section p, #projetos section h3 {
+	padding: 0 15% 0 15%;
+}
+
+#imgs{
+	padding: 30px;
+	text-align: center;
+}
+
+figure {
+	display: inline-block;
+}
+
+#imgs figure figcaption{
+	opacity: 0%;
+}
+
+#imgs figure:hover figcaption{
+	opacity: 100%;
+}
+
+#imgs img{
+	height: 250px;
+	width: 420px;
+	margin: 0;
+	border: var(--cor3) solid 4px;
+	object-fit: cover;
+	transition: transform 0.3s, height 0.3s, width 0.3s;
+	filter: brightness(50%);
+}
+
+#imgs img:hover {
+	height: 375px;
+	width: 630px;
+	filter: brightness(100%);
+}
+
+figcaption {
+	color: white;
+}
+
+#dica {
+	font-size: 12px;
+}
+
+#sobre{
+	padding: 20px;
+	
+}
+
+#sobre div {
+	display: inline-block;
+	padding: 25px;
+}
+
+#sobre_texto {
+	color: white;
+	vertical-align: top;
+	word-wrap: break-word;
+	text-align: justify;
+	width: 50%;
+}
+
+#sobre_img {
+	text-align: center;
+	width: 20%;
+}
+
+#sobre div img {
+	height: 250px;
+	width: 250px;
+	border: solid var(--cor3) 5px;
+	transition: transform 0.3s;
+}
+
+#sobre div img:hover {
+	transform: scale(1.1);
+	filter:brightness(60%);
+	transition: transform 0.3s;
+	transition: filter 0.3s;
+}
+
+/*FOOTER*/
+
+#home .copyright {
+	background-color: var(--cor4);
+}
+
+footer{
+	margin-top: 0;
+}
+
+footer p{
+	padding: 0 18% 0 18%;
+}
+
+.copyright{
+	background-color: var(--cor3);
+	margin: auto;
+	font-size: 15px;
+	padding: 15px 18% 15px 18%;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+}
+
+/*MEDIA QUERY*/
+
+@media (max-width: 800px) {
+	header, #home header{
+		height: 70px;
+		padding: 0;
+		text-align: left;
+	}
+
+	header h1, #home header h1{
+		font-size: 15px;
+	}
+
+	header h2, #home header h2{
+		font-size: 7.5px;
+	}
+
+	header button img, #home header button img{
+		width: 20px;
+	}
+
+	.link_nav, #home .link_nav{
+		font-size: 8px;
+		display: block;
+		padding: 0;
+		margin: auto;
+		text-align: center;
+	}
+
+	#naveg, #home #naveg{
+		padding: 0;	
+		margin: 0;
+		text-align: center;
+	}
+
+	#divcompre button, #home strong {
+		font-size: 15px;
+	}
+
+	#naveg p {
+		padding: 1px;
+	}
+
+}
